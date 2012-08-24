@@ -53,7 +53,5 @@ char * find_repeating_sting(char *str)
 		return substr;
 	}
 	else
-	{
 		return NULL;
-	}
 }
