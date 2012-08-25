@@ -3,19 +3,6 @@
 
 void radix_sort(int *, int);
 
-void main(int argc, char *argv[])
-{
-	int arr_size=argc-1;
-	int *arr=(int *) malloc(sizeof(int)*arr_size);
-	int count;
-	for(count=0;count<=arr_size-1;count++)
-		arr[count]=atoi(argv[count+1]);
-	radix_sort(arr, arr_size);
-	for(count=0;count<=arr_size-1;count++)
-		printf("%d\n", arr[count]);
-}
-
-
 void radix_sort(int *arr, int size)
 {
 	int max=arr[0];
